@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+   <PreferenceCategory
+         android:title="Account" > 
+   <!--
+      <Preference
+            android:key="setting_profile" 
+            android:title="Change Profile" 
+         />
+     -->
+      <PreferenceScreen 
+            android:key="setting_privacy" 
+            android:title="Privacy" 
+            >
+         <ListPreference 
+               android:key="privacy_level"
+               android:title="@string/privacy_level"
+               android:summary="Privacy level of your info"
+               android:persistent="true"
+               android:entries="@array/privacyLevel" 
+               android:entryValues="@array/privacyLevelVal"
+               android:defaultValue="0"
+            />
+         <SwitchPreference
+               android:key="privacy_basic"
+               android:title="@string/privacy_basic"
+               android:summary="Including gender, birthday, email"
+               android:persistent="true"
+               android:defaultValue="true"
+            />
+
+         <SwitchPreference
+               android:key="privacy_detailed"
+               android:title="@string/privacy_detailed"
+               android:summary="Including detailed info"
+               android:persistent="true"
+               android:defaultValue="true"
+            />
+
+         <SwitchPreference
+               android:key="privacy_location"
+               android:title="@string/privacy_location"
+               android:summary="Location visibility"
+               android:persistent="true"
+               android:defaultValue="true"
+            />
+
+
+      </PreferenceScreen>
+   </PreferenceCategory> 
+
+   <!--
+     <PreferenceCategory
+           android:visibility="gone"
+           android:title="Theme"> 
+        <ListPreference
+              android:persistent="true"
+              android:title="Theme" 
+              android:entries="@array/themes"
+              android:defaultValue="0"
+              android:entryValues="@array/themesVal" />
+     </PreferenceCategory> 
+     <PreferenceCategory
+           android:visibility="gone"
+           android:title="Notification"> 
+        <RingtonePreference
+              android:key="setting_sound" 
+              android:persistent="true"
+              android:title="Sounds" />
+        <SwitchPreference
+              android:defaultValue="false"
+              android:persistent="true"
+              android:title="Vibration" />
+     </PreferenceCategory> 
+  -->
+
+  </PreferenceScreen>

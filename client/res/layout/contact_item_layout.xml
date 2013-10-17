@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+   <android.widget.QuickContactBadge
+       android:id="@+id/contact_item_avatar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:adjustViewBounds="true"
+       android:clickable="false"
+       android:duplicateParentState="true"
+       android:focusable="false"
+       android:focusableInTouchMode="false"
+       android:longClickable="false"
+       android:visibility="visible" />
+
+   <TextView android:id="@+id/contact_item_subject"  
+         android:layout_width="wrap_content"  
+         android:layout_height="wrap_content"  
+         android:paddingLeft="10dip"  
+         android:textSize="20dp"
+         android:layout_toRightOf="@id/contact_item_avatar"  
+         android:lines="2" 
+         android:maxLines="2" 
+      />  
+</RelativeLayout>  
+

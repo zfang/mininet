@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:visibility="gone" >
+
+    <TextView
+          android:id="@+id/TextView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/userinfo_email"
+          android:textSize="15dp" />
+
+    <EditText
+          android:id="@+id/e_mininet_username"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:singleLine="true"
+          android:inputType="textEmailAddress"
+          android:layout_marginTop="10dp" >
+       <!--
+         <requestFocus />
+            -->
+    </EditText>
+
+    <TextView
+          android:id="@+id/TextView2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/login_password"
+          android:layout_marginTop="10dp"
+          android:textSize="15dp" />
+
+    <EditText
+          android:id="@+id/e_mininet_password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:singleLine="true"
+          android:inputType="textPassword" >
+
+    </EditText>
+
+    <TextView
+          android:id="@+id/editText1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/login_status"
+          android:layout_marginTop="10dp"
+          android:textSize="15dp" />
+
+    <Spinner
+          android:id="@+id/sstatus"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:entries="@array/status_array"
+          android:layout_marginTop="10dp" />
+
+    <Button
+          android:id="@+id/blogin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/login_button" />
+
+    <Button
+          android:id="@+id/bregister"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/register_button" />
+ </LinearLayout>
+
+ <ImageView
+     android:id="@+id/imageView1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/titletext" />
+
+ <Button
+     android:id="@+id/bloginothers"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:text="@string/login_others" />
+
+</LinearLayout>

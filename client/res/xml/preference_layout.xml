@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+   <com.mininet.utils.CustomListPreference
+         android:key="match_gender"
+         android:title="@string/userinfo_gender"
+         android:entries="@array/prefs"
+         android:entryValues="@array/prefsVal"
+         android:persistent="true"
+         android:defaultValue="0"
+      />
+   <com.mininet.utils.CustomListPreference
+         android:key="match_birthdate"
+         android:title="@string/userinfo_birthday"
+         android:entries="@array/prefs"
+         android:entryValues="@array/prefsVal"
+         android:persistent="true"
+         android:defaultValue="0"
+      />
+
+   <com.mininet.utils.CustomListPreference
+         android:key="match_interests"
+         android:title="@string/userinfo_interests"
+         android:entries="@array/prefs"
+         android:entryValues="@array/prefsVal"
+         android:persistent="true"
+         android:defaultValue="1"
+      />
+</PreferenceScreen>

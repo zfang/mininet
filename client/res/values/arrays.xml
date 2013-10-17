@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="status_array">
+      <item>Online</item>
+      <item>Busy</item>
+      <item>Away</item>
+      <item>Offline</item>
+   </string-array>
+   <string-array name="themes">
+      <item>0</item>
+      <item>1</item>
+   </string-array>
+   <string-array name="themesVal">
+      <item>0</item>
+      <item>1</item>
+   </string-array>
+   <string-array name="sounds">
+      <item>On</item>
+      <item>Off</item>
+   </string-array>
+   <string-array name="soundsVal">
+      <item>0</item>
+      <item>-1</item>
+   </string-array>
+   <string-array name="prefs">
+      <item>Off</item>
+      <item>Related to Me</item>
+      <item>Custom</item>
+   </string-array>
+   <string-array name="prefsVal">
+      <item>0</item>
+      <item>1</item>
+      <item>2</item>
+   </string-array>
+   <string-array name="privacyLevel">
+      <item>Everyone</item>
+      <item>Friends</item>
+      <item>Me</item>
+   </string-array>
+   <string-array name="privacyLevelVal">
+      <item>0</item>
+      <item>1</item>
+      <item>2</item>
+   </string-array>
+</resources>

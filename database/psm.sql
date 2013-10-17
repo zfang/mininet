@@ -1,0 +1,7 @@
+DELIMITER $$
+CREATE TRIGGER add_default_privacy
+AFTER INSERT ON Person
+FOR EACH ROW 
+BEGIN
+   INSERT INTO Privacy(pid) VALUES(NEW.id);
+END$$

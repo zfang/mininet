@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:padding="10dp" >
+
+   <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" >
+
+      <QuickContactBadge
+            android:id="@+id/userinfo_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:visibility="visible" 
+         />
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp" 
+            android:text="@string/login_user_name" />
+
+      <EditText
+            android:id="@+id/e_userinfo_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:ems="10" >
+
+         <requestFocus />
+      </EditText>
+
+   <LinearLayout
+         android:id="@+id/l_userinfo_password"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" 
+         android:visibility="gone" >
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp" 
+            android:text="@string/login_password" />
+
+      <EditText
+            android:id="@+id/e_userinfo_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp" 
+            android:inputType="textPassword" />
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userinfo_confirm_password"
+            android:layout_marginTop="10dp" 
+            android:textSize="15dp" />
+
+      <EditText
+            android:id="@+id/e_userinfo_c_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:singleLine="true"
+            android:inputType="textPassword" />
+
+   </LinearLayout>
+
+   <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/userinfo_gender"
+         android:layout_marginTop="10dp" 
+         android:textSize="15dp" />
+
+   <RadioGroup 
+         android:id="@+id/radioGender"
+         android:layout_width="wrap_content"
+         android:layout_marginTop="10dp" 
+         android:layout_height="wrap_content">
+
+      <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userinfo_male"
+            android:checked="true" />
+
+      <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userinfo_female" />
+
+   </RadioGroup>
+
+   <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/userinfo_birthday"
+         android:layout_marginTop="10dp" 
+         android:textSize="15dp" />
+
+   <TextView
+         android:id="@+id/e_userinfo_dob"
+         android:layout_width="match_parent"
+         android:singleLine="true"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp" 
+         android:textStyle="bold"
+         android:inputType="date" />
+
+   <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/userinfo_email"
+         android:layout_marginTop="10dp" 
+         android:textSize="15dp" />
+
+   <EditText
+         android:id="@+id/e_userinfo_email"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:singleLine="true"
+         android:layout_marginTop="10dp" 
+         android:inputType="textEmailAddress" />
+
+   <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/userinfo_interests"
+         android:layout_marginTop="10dp" 
+         android:textSize="15dp" />
+
+   <MultiAutoCompleteTextView
+         android:id="@+id/e_userinfo_interests"
+         android:layout_width="match_parent"
+         android:singleLine="true"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp" 
+         android:ems="10" />
+
+
+   <Button
+         android:id="@+id/b_userinfo_register"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp" 
+         android:text="@string/register_button" 
+         />
+
+   <Button
+         android:id="@+id/b_userinfo_update"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:text="@string/update" />
+
+</LinearLayout>
+
+</ScrollView>

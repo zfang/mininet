@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:padding="10dp" >
+
+   <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+
+      <QuickContactBadge
+          android:id="@+id/profile_badge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:adjustViewBounds="true"
+          android:clickable="true"
+          android:longClickable="true"
+          android:visibility="visible" />
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userinfo_name"
+            android:layout_marginTop="10dp" 
+            android:textSize="15dp" />
+
+      <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:textSize="25dp" />
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userinfo_gender"
+            android:layout_marginTop="10dp" 
+            android:textSize="15dp" />
+
+      <TextView
+            android:id="@+id/profile_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:textSize="25dp" />
+
+   <LinearLayout
+         android:id="@+id/profile_basic_info"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/userinfo_birthday"
+            android:textSize="15dp" />
+
+      <TextView
+            android:id="@+id/profile_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:textSize="25dp" />
+
+   </LinearLayout>
+   <LinearLayout
+         android:id="@+id/profile_detailed_info"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userinfo_interests"
+            android:layout_marginTop="10dp" 
+            android:textSize="15dp" />
+
+      <TextView
+            android:id="@+id/profile_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:textSize="25dp" />
+
+   </LinearLayout>
+
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" 
+            android:orientation="vertical" >
+
+         <Button
+               android:id="@+id/b_add_contact"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/add_contact"
+               android:textSize="15dp" />
+
+         <Button
+               android:id="@+id/b_delete_contact"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/delete_contact"
+               android:textSize="15dp" />
+
+         <Button
+               android:id="@+id/b_block_contact"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/block_contact"
+               android:textSize="15dp" />
+
+         <Button
+               android:id="@+id/b_unblock_contact"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/unblock_contact"
+               android:textSize="15dp" />
+
+         <Button
+               android:id="@+id/b_locate_contact"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/locate_contact"
+               android:textSize="15dp" />
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+</ScrollView> 
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item 
+         android:id="@+id/menu_search_pref" 
+         android:title="Search preference" 
+         android:titleCondensed="Search Pref" 
+         android:visible="true" 
+         android:enabled="true">
+   </item>
+   <item 
+         android:id="@+id/menu_setting" 
+         android:title="Setting" 
+         android:enabled="true" 
+         android:visible="true">
+   </item>
+   <item 
+         android:id="@+id/menu_locations" 
+         android:title="Show Contacts Location" 
+         android:enabled="true" 
+         android:visible="true">
+   </item>
+   <item 
+         android:id="@+id/menu_log_out" 
+         android:title="Log out" 
+         android:visible="true" 
+         android:enabled="true">
+   </item>
+
+</menu>
